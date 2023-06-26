@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = ({ onSubmit }) => {
@@ -59,11 +58,12 @@ const ContactForm = ({ onSubmit }) => {
 
 				<button type="submit" className="btn btn-primary">Add Contact</button>
 			</form >
-			<ToastContainer />
 		</>
 	)
 }
 
-ContactForm.propTypes = {}
+ContactForm.propTypes = {
+	onSubmit: PropTypes.func
+}
 
 export default ContactForm

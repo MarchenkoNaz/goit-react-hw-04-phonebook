@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const ContactList = ({ contacts, filter, handleDelete }) => {
+const ContactList = ({ contacts, handleDelete }) => {
 
 
 	return (<div className='m-2'>
@@ -20,9 +20,9 @@ const ContactList = ({ contacts, filter, handleDelete }) => {
 
 }
 
-// ContactList.propTypes = {
-// 	contacts: PropTypes.array.isRequired,
-// 	deleteContact: PropTypes.func.isRequired,
-// }
+ContactList.propTypes = {
+	contacts: PropTypes.array.isRequired,
+	handleDelete: PropTypes.func.isRequired,
+}
 
 export default ContactList
